@@ -40,8 +40,8 @@ $theme-dark: #4a182b; // 74 24 43
 ;
 
 
-/* filepath: /Users/vincentvonappen/software/Dianysos/css/main.scss */
-.video-container {
+/* filepath: Dianysos/css/main.scss */
+#video-page .video-container {
         position: relative;
         max-width: 800px;
         /* Adjust width as needed */
@@ -56,7 +56,7 @@ $theme-dark: #4a182b; // 74 24 43
         /* Optional: Add a shadow */
 }
 
-video {
+#video-page video {
         display: block;
         width: 100%;
         height: auto;
