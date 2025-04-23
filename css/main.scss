@@ -1,7 +1,4 @@
----
----
-
-@charset "utf-8";
+--- --- @charset "utf-8";
 
 // Example Defaults
 // $base-font-family: Helvetica, Arial, sans-serif;
@@ -35,11 +32,34 @@
 
 // variables.less
 $theme-primary: #d94c3a; // 217 74 60
-$theme-dark: #4a182b;  // 74 24 43
+$theme-dark: #4a182b; // 74 24 43
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "mixins",
-        "base"
+@import "mixins",
+"base"
 ;
- 
+
+
+/* filepath: /Users/vincentvonappen/software/Dianysos/css/main.scss */
+.video-container {
+        position: relative;
+        max-width: 800px;
+        /* Adjust width as needed */
+        margin: 0 auto;
+        /* Center the video */
+        padding: 20px;
+        background: #f4f4f4;
+        /* Optional: Add a background color */
+        border-radius: 8px;
+        /* Optional: Add rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a shadow */
+}
+
+video {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        /* Match the container's rounded corners */
+}
