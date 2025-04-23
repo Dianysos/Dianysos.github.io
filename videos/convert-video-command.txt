@@ -1,0 +1,5 @@
+ffmpeg -i video-test.mp4 \
+  -c:v libvpx-vp9 -crf 32 -b:v 0 \
+  -c:a libvorbis -aq 5 \
+  -threads 2 \
+  video-test.webm
