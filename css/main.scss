@@ -1,3 +1,6 @@
+---
+---
+
 @charset "utf-8";
 
 // Example Defaults
@@ -40,27 +43,27 @@ $theme-dark: #4a182b; // 74 24 43
 ;
 
 
-// /* filepath: /Users/vincentvonappen/software/Dianysos/css/main.scss */
-#video-page .video-container {
-    position: relative;
-    max-width: $content-width; /* Use the defined content width */
-    margin: 0 auto;
-    padding: $spacing-unit; /* Use the spacing unit */
-    background: $background-color; /* Use the background color */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+// // /* filepath: /Users/vincentvonappen/software/Dianysos/css/main.scss */
+// #video-page .video-container {
+//     position: relative;
+//     max-width: $content-width; /* Use the defined content width */
+//     margin: 0 auto;
+//     padding: $spacing-unit; /* Use the spacing unit */
+//     background: $background-color; /* Use the background color */
+//     border-radius: 8px;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
 
-#video-page video {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+// #video-page video {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//     border-radius: 8px;
+// }
 
-@media (max-width: $on-palm) {
-    #video-page .video-container {
-        max-width: 100%;
-        padding: $spacing-unit / 2;
-    }
-}
+// @media (max-width: $on-palm) {
+//     #video-page .video-container {
+//         max-width: 100%;
+//         padding: $spacing-unit / 2;
+//     }
+// }
