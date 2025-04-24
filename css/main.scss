@@ -15,6 +15,20 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
+
+
+// Colors
+$primary-color: #4a182b; // Main accent color
+$secondary-color: #d94c3a; // Accent color
+$tertiary-color: #541325; // Deep red
+$dark-color: #120B0B; // Black
+$light-color: #F7F3EF; // Light cream
+
+// variables.less
+$theme-dark: $secondary-color;
+$theme-primary: $primary-colour;
+
+
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
@@ -33,9 +47,16 @@ $on-laptop:        800px;
 //     }
 // }
 
-// variables.less
-$theme-primary: #d94c3a; // 217 74 60
-$theme-dark: #4a182b; // 74 24 43
+
+
+// Fonts
+$font-family-primary: "SF Pro", sans-serif;
+$font-size-small: 20px;
+$font-size-medium: 32px;
+$font-size-large: 40px;
+$font-weight-light: 400;
+$font-weight-medium: 510;
+$font-weight-bold: 860;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "mixins",
@@ -66,4 +87,18 @@ $theme-dark: #4a182b; // 74 24 43
         max-width: 100%;
         padding: $spacing-unit / 2;
     }
+}
+
+// Typography
+h1, h2, h3 {
+  font-family: $font-family-primary;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+}
+
+p {
+  font-family: $font-family-primary;
+  color: rgba(27, 31, 38, 0.72);
+  font-size: $font-size-small;
+  line-height: 1.5;
 }
