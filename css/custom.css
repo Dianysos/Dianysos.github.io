@@ -1,0 +1,52 @@
+/* filepath: /Users/vincentvonappen/software/Dianysos/css/main.scss */
+
+/* Triple Section */
+#triple {
+    padding: 60px 0;
+    background-color: $background-color; /* Use the defined background color */
+
+    .triple-image {
+        max-width: 250px; /* Ensure consistent image size */
+        height: 250px; /* Fixed height for uniformity */
+        object-fit: cover; /* Crop the image to fit the container */
+        margin: 0 auto; /* Center the image */
+        margin-bottom: 15px; /* Add spacing below the image */
+    }
+
+    h3 {
+        font-family: $font-family-primary;
+        font-size: $font-size-medium; /* Use medium font size */
+        font-weight: $font-weight-bold; /* Use bold weight */
+        color: $tertiary-color; /* Use deep red color */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: $font-family-primary;
+        font-size: $font-size-small; /* Use small font size */
+        font-weight: $font-weight-light; /* Use light weight */
+        color: $text-color; /* Use black color */
+        line-height: 1.5;
+        margin-top: auto; /* Allow dynamic spacing based on content */
+    }
+}
+
+#triple .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the content horizontally */
+    justify-content: flex-start; /* Align items at the top */
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Responsive Adjustments */
+@media (max-width: $on-palm) {
+    #triple .triple-image {
+        max-width: 100%; /* Scale to full width on smaller screens */
+    }
+
+    #triple .col-md-4 {
+        margin-bottom: 30px; /* Add spacing between stacked columns */
+    }
+}
