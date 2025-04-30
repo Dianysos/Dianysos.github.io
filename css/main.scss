@@ -6,7 +6,8 @@
 // Example Defaults
 
 // Fonts
-$font-family-primary: "SF Pro", sans-serif;
+$font-family-primary: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family-secondary: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 $font-size-small: 20px;
 $font-size-medium: 32px;
 $font-size-large: 40px;
@@ -14,7 +15,8 @@ $font-weight-light: 400;
 $font-weight-medium: 510;
 $font-weight-bold: 860;
 
-$base-font-family: Helvetica, Arial, sans-serif;
+//$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -62,12 +64,11 @@ $on-laptop:        800px;
 // Typography
 h1, h2, h3 {
     font-family: $font-family-primary;
-    color: $primary-color;
     font-weight: $font-weight-bold;
   }
   
   p {
-    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
     color: rgba(27, 31, 38, 0.72);
     font-size: $font-size-small;
     line-height: 1.5;
