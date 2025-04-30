@@ -70,7 +70,7 @@
     }
     .mission-text {
       margin-top: 1rem;
-      font-family: "SF Pro", sans-serif;
+      font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
       font-size: 20px;
       font-weight: 400;
       color: #F7F3EF;
@@ -81,14 +81,13 @@
 /* Solution */
 #solution {
   h2 {
-    font-family: "SF Pro", sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 32px;
-    font-weight: 510;
-    color: rgba(27,31,38,0.72);
+    font-weight: 860;
     margin-bottom: .5rem;
   }
   p {
-    font-family: "SF Pro", sans-serif;
+    font-family:'Merriweather', 'Helvetica Neue', Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: rgba(27,31,38,0.72);
@@ -96,12 +95,14 @@
   .solution-img {
     max-width: 100%;
     height: auto;
+    position: sticky;
+    top: 100px;
   }
 }
 
 @media (min-width: 992px) {
     .mt-overlap {
-      margin-top: -420px;
+      margin-top: -300px;
       z-index: 10;
       position: relative;
     }

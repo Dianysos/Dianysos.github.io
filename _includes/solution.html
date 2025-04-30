@@ -1,16 +1,33 @@
+<script>
+    document.addEventListener('scroll', () => {
+      const el = document.querySelector('.solution-scroll-img');
+      const maxScroll = 400; 
+      const startMargin = -320;
+      const endMargin = -80;
+  
+      if (!el) return;
+  
+      const scrollY = window.scrollY;
+      const progress = Math.min(scrollY / maxScroll, 1); 
+      const currentMargin = startMargin + (endMargin - startMargin) * progress;
+  
+      el.style.marginTop = `${currentMargin}px`;
+    });
+  </script>
+  
 <section id="solution" class="pt-0">
     <div class="container-fluid px-4 px-md-5">
         <div class="d-flex flex-column-reverse flex-sm-column-reverse flex-md-row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
-                <h2>How It Works</h2>
-                <p>
-                    Tap a bottle with your phone → our AI sommelier reads the tag →
-                    get instant tasting notes, pairings & live stock info.
-                </p>
-            </div>
-            <div class="col-md-6 order-1 order-md-2 text-center mt-overlap">
-                <img src="{{ site.baseurl }}/assets/MockUP/solution.png" alt="Technical architecture"
-                    class="img-fluid solution-img">
+            <div class="col-md-6 order-1 order-md-2 text-center mt-overlap solution-scroll-img">
+                <img src="{{ site.baseurl }}/assets/MockUP/solution.png"
+                     alt="Technical architecture"
+                     class="img-fluid solution-img">
+              </div>
+              <div class="col-md-6 order-2 order-md-1">
+                <h2>How It Works</h2> <br>
+                <p>Tap a bottle with your phone. </p>
+                <p>Our AI sommelier reads the tag. </p>
+                <p>Get instant tasting notes, pairings & live stock info.</p>
             </div>
         </div>
     </div>
